@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Record Layouts</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <h1>Define Record Layouts</h1>
+
+    <div id="rules-container">
+    </div>
+
+    <div id="button-container">
+        <button class="add-rule-button" onclick="addRule()">Add Element Rule</button>
+        <input type="file" id="importFile" accept=".json" style="display: none;">
+        <button class="import-export-button" onclick="triggerFileInput()">
+            <i class="fas fa-file-import"></i> Import Rules
+        </button>
+        <button class="import-export-button" onclick="exportRules()">
+            <i class="fas fa-file-export"></i> Export Rules
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
